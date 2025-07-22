@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Our Menu</h1>
+    <div class="tabs">
+      <ul>
+        <li><a href="#" class="tab" onclick="showCategory('meals')">Meals</a></li>
+        <li><a href="#" class="tab" onclick="showCategory('soup')">Soup Varieties</a></li>
+        <li><a href="#" class="tab" onclick="showCategory('appetizers')">Appetizers</a></li>
+        <!-- More menu categories -->
+      </ul>
+    </div>
+    <div id="meals" class="category-content">
+      <h2>Rice Varieties</h2>
+      <div class="menu-items">
+        <!-- Example menu item -->
+        <div class="menu-item">
+          <img src="images/rice.jpg" alt="Rice Dish">
+          <p>Item Name</p>
+          <p>Price: $10</p>
+          <div>
+            <button>Eat Here</button>
+            <button>Parcel</button>
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <!-- Repeat for more items -->
+      </div>
+    </div>
+    <div id="soup" class="category-content" style="display:none;">
+      <!-- Soup items will appear here -->
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
 
